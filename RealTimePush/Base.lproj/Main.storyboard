@@ -17,18 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lzb-OQ-7Ze">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lzb-OQ-7Ze">
                                 <rect key="frame" x="35" y="168" width="312" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter you Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q12-D2-nrE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q12-D2-nrE">
                                 <rect key="frame" x="35" y="123" width="145" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1nS-7d-RkM"/>
+                                    <constraint firstAttribute="width" constant="145" id="f4j-Gl-3NI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd2-4B-o5E">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd2-4B-o5E">
                                 <rect key="frame" x="112" y="219" width="66" height="30"/>
                                 <state key="normal" title="Join Chat">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,6 +44,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lzb-OQ-7Ze" firstAttribute="top" secondItem="q12-D2-nrE" secondAttribute="bottom" constant="24" id="2Pi-hs-1Nf"/>
+                            <constraint firstItem="Lzb-OQ-7Ze" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="19" id="789-76-1T7"/>
+                            <constraint firstItem="q12-D2-nrE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="59" id="Jf8-Zu-0M6"/>
+                            <constraint firstItem="Vd2-4B-o5E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="96" id="kx7-Xe-aRU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lzb-OQ-7Ze" secondAttribute="trailing" constant="12" id="rD1-ec-KxF"/>
+                            <constraint firstItem="q12-D2-nrE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="19" id="reH-uR-4rT"/>
+                            <constraint firstItem="Vd2-4B-o5E" firstAttribute="top" secondItem="Lzb-OQ-7Ze" secondAttribute="bottom" constant="21" id="yrz-JY-DTv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nQ5-bY-sdh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
