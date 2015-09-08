@@ -94,11 +94,20 @@
     [self.messagesTable reloadData];
 }
 
--(void) client:(PubNub *)client didReceivePresenceEvent:(PNPresenceEventResult *)event {
-    
-}
 
 -(void) client:(PubNub *)client didReceiveStatus:(PNSubscribeStatus *)status {
+    
+    if (status.category == PNConnectedCategory) {
+        NSLog(@"Connected. First step complete");
+    }
+    
+    else if (status.category == PNUnexpectedDisconnectCategory) {
+        NSLog(@"Connection was disconnected. Tough luck bud");
+    }
+    
+    else if (status.category == PNUnknownCategory) {
+        NSLog(@"No clue what's going on");
+    }
     
 }
 
