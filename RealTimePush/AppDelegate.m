@@ -25,6 +25,11 @@
                                                                                          |UIUserNotificationTypeAlert) categories:nil];
     [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     
+    NSDictionary *dictionary = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (dictionary) {
+        NSLog(@"dict is %@", dictionary);
+    }
+    
     return YES;
 }
 
@@ -54,15 +59,7 @@
 
 -(void) application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     NSLog(@"Application registered for push notifications");
-    
-    // Get the device token string
-    const char* data = [deviceToken bytes];
-    NSMutableString* token = [NSMutableString string];
-    
-    for (int i = 0; i < [deviceToken length]; i++) {
-        [token appendFormat:@"%02.2hhX", data[i]];
-    }
-        
+            
     self.deviceToken = deviceToken;
 
 }
@@ -73,6 +70,8 @@
 
 -(void) application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     NSLog(@"Received push");
+    
+//    NSLog(@"dictionary content is %@", userInfo.allKeys);
 }
 
 #pragma mark - Core Data stack

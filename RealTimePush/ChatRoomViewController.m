@@ -78,6 +78,8 @@
 
 }
 
+#pragma mark - PubNub delegate methods
+
 -(void) client:(PubNub *)client didReceiveMessage:(PNMessageResult *)message {
     
     NSLog(@"Message received is %@", message.data.message);
@@ -121,23 +123,15 @@
     
     NSDictionary *dict = @{@"from" : self.name, @"message" : message, @"uuid" : self.appDelegate.deviceUUID}; // Not a good idea to send UUIDs in production app. Use username/phone number
     
-//    [self.pubnubClient publish:dict toChannel:@"ChatRoomChannel" withCompletion:^(PNPublishStatus *status) {
-//        if (status.error) {
-//            NSLog(@"Could not send message");
-//            return;
-//        }
-//        [self.sentMessagesArray addObject:message];
-//        
-//    }];
-    
     NSDictionary *push = @{@"apns" :
                                @{@"aps" : @{
-                                         @"alert" : [NSString stringWithFormat:@"%@: %@", self.name, message]
+                                         @"alert" : [NSString stringWithFormat:@"%@: %@", self.name, message],
+                                         @"sound" : @"default" //default means the default ringtone will be used
+                                         //@"badge" : 2
                                          }
                                  }
                            };
     
-//    self.pubnubClient 
 
     [self.pubnubClient publish:dict toChannel:@"ChatRoomChannel" mobilePushPayload:push withCompletion:^(PNPublishStatus *status) {
         if (status.error) {
@@ -147,6 +141,8 @@
         [self.sentMessagesArray addObject:message];
     }];
 }
+
+#pragma mark - UITableView methods
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.messagesArray count];
