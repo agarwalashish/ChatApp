@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75FD4A3F1B9C35F4007F47BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD4A3E1B9C35F4007F47BD /* main.m */; };
+		75FD4A421B9C35F4007F47BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD4A411B9C35F4007F47BD /* AppDelegate.m */; };
+		75FD4A451B9C35F4007F47BD /* RealTimePush.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75FD4A431B9C35F4007F47BD /* RealTimePush.xcdatamodeld */; };
+		75FD4A4B1B9C35F4007F47BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FD4A491B9C35F4007F47BD /* Main.storyboard */; };
+		75FD4A4D1B9C35F4007F47BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FD4A4C1B9C35F4007F47BD /* Images.xcassets */; };
+		75FD4A501B9C35F4007F47BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FD4A4E1B9C35F4007F47BD /* LaunchScreen.xib */; };
+		75FD4A5C1B9C35F4007F47BD /* RealTimePushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD4A5B1B9C35F4007F47BD /* RealTimePushTests.m */; };
+		75FD4A671B9C37CF007F47BD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD4A661B9C37CF007F47BD /* HomeViewController.m */; };
+		75FD4A6A1B9C3816007F47BD /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD4A691B9C3816007F47BD /* ChatRoomViewController.m */; };
+		85543E6AD22EBC265260BFB8 /* libPods-RealTimePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4B906A58459EC29E7DB189 /* libPods-RealTimePush.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75FD4A561B9C35F4007F47BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75FD4A311B9C35F4007F47BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75FD4A381B9C35F4007F47BD;
+			remoteInfo = RealTimePush;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75FD4A391B9C35F4007F47BD /* RealTimePush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimePush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75FD4A3D1B9C35F4007F47BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75FD4A3E1B9C35F4007F47BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75FD4A401B9C35F4007F47BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		75FD4A411B9C35F4007F47BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		75FD4A441B9C35F4007F47BD /* RealTimePush.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RealTimePush.xcdatamodel; sourceTree = "<group>"; };
+		75FD4A4A1B9C35F4007F47BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75FD4A4C1B9C35F4007F47BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		75FD4A4F1B9C35F4007F47BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		75FD4A551B9C35F4007F47BD /* RealTimePushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimePushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75FD4A5A1B9C35F4007F47BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75FD4A5B1B9C35F4007F47BD /* RealTimePushTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealTimePushTests.m; sourceTree = "<group>"; };
+		75FD4A651B9C37CF007F47BD /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		75FD4A661B9C37CF007F47BD /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		75FD4A681B9C3816007F47BD /* ChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomViewController.h; sourceTree = "<group>"; };
+		75FD4A691B9C3816007F47BD /* ChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
+		7C912F96CE9A1CB46F23529B /* Pods-RealTimePush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimePush.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealTimePush/Pods-RealTimePush.release.xcconfig"; sourceTree = "<group>"; };
+		BD4B906A58459EC29E7DB189 /* libPods-RealTimePush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealTimePush.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E3D57A9F85ED00B5A0C801 /* Pods-RealTimePush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimePush.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealTimePush/Pods-RealTimePush.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75FD4A361B9C35F4007F47BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85543E6AD22EBC265260BFB8 /* libPods-RealTimePush.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75FD4A521B9C35F4007F47BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		211CBEB29B24693E05AF07E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8E3D57A9F85ED00B5A0C801 /* Pods-RealTimePush.debug.xcconfig */,
+				7C912F96CE9A1CB46F23529B /* Pods-RealTimePush.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		525DA2ACF9312FC6AB4BA5EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD4B906A58459EC29E7DB189 /* libPods-RealTimePush.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75FD4A301B9C35F4007F47BD = {
+			isa = PBXGroup;
+			children = (
+				75FD4A3B1B9C35F4007F47BD /* RealTimePush */,
+				75FD4A581B9C35F4007F47BD /* RealTimePushTests */,
+				75FD4A3A1B9C35F4007F47BD /* Products */,
+				211CBEB29B24693E05AF07E0 /* Pods */,
+				525DA2ACF9312FC6AB4BA5EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75FD4A3A1B9C35F4007F47BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75FD4A391B9C35F4007F47BD /* RealTimePush.app */,
+				75FD4A551B9C35F4007F47BD /* RealTimePushTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75FD4A3B1B9C35F4007F47BD /* RealTimePush */ = {
+			isa = PBXGroup;
+			children = (
+				75FD4A401B9C35F4007F47BD /* AppDelegate.h */,
+				75FD4A411B9C35F4007F47BD /* AppDelegate.m */,
+				75FD4A651B9C37CF007F47BD /* HomeViewController.h */,
+				75FD4A661B9C37CF007F47BD /* HomeViewController.m */,
+				75FD4A681B9C3816007F47BD /* ChatRoomViewController.h */,
+				75FD4A691B9C3816007F47BD /* ChatRoomViewController.m */,
+				75FD4A491B9C35F4007F47BD /* Main.storyboard */,
+				75FD4A4C1B9C35F4007F47BD /* Images.xcassets */,
+				75FD4A4E1B9C35F4007F47BD /* LaunchScreen.xib */,
+				75FD4A431B9C35F4007F47BD /* RealTimePush.xcdatamodeld */,
+				75FD4A3C1B9C35F4007F47BD /* Supporting Files */,
+			);
+			path = RealTimePush;
+			sourceTree = "<group>";
+		};
+		75FD4A3C1B9C35F4007F47BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75FD4A3D1B9C35F4007F47BD /* Info.plist */,
+				75FD4A3E1B9C35F4007F47BD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75FD4A581B9C35F4007F47BD /* RealTimePushTests */ = {
+			isa = PBXGroup;
+			children = (
+				75FD4A5B1B9C35F4007F47BD /* RealTimePushTests.m */,
+				75FD4A591B9C35F4007F47BD /* Supporting Files */,
+			);
+			path = RealTimePushTests;
+			sourceTree = "<group>";
+		};
+		75FD4A591B9C35F4007F47BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75FD4A5A1B9C35F4007F47BD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75FD4A381B9C35F4007F47BD /* RealTimePush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75FD4A5F1B9C35F4007F47BD /* Build configuration list for PBXNativeTarget "RealTimePush" */;
+			buildPhases = (
+				B828BEC72BB09EC1B79E6CC9 /* Check Pods Manifest.lock */,
+				75FD4A351B9C35F4007F47BD /* Sources */,
+				75FD4A361B9C35F4007F47BD /* Frameworks */,
+				75FD4A371B9C35F4007F47BD /* Resources */,
+				092FB139EA7EB1015615A69A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealTimePush;
+			productName = RealTimePush;
+			productReference = 75FD4A391B9C35F4007F47BD /* RealTimePush.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75FD4A541B9C35F4007F47BD /* RealTimePushTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75FD4A621B9C35F4007F47BD /* Build configuration list for PBXNativeTarget "RealTimePushTests" */;
+			buildPhases = (
+				75FD4A511B9C35F4007F47BD /* Sources */,
+				75FD4A521B9C35F4007F47BD /* Frameworks */,
+				75FD4A531B9C35F4007F47BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75FD4A571B9C35F4007F47BD /* PBXTargetDependency */,
+			);
+			name = RealTimePushTests;
+			productName = RealTimePushTests;
+			productReference = 75FD4A551B9C35F4007F47BD /* RealTimePushTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75FD4A311B9C35F4007F47BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = AshishAgarwal;
+				TargetAttributes = {
+					75FD4A381B9C35F4007F47BD = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					75FD4A541B9C35F4007F47BD = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 75FD4A381B9C35F4007F47BD;
+					};
+				};
+			};
+			buildConfigurationList = 75FD4A341B9C35F4007F47BD /* Build configuration list for PBXProject "ChatApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75FD4A301B9C35F4007F47BD;
+			productRefGroup = 75FD4A3A1B9C35F4007F47BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75FD4A381B9C35F4007F47BD /* RealTimePush */,
+				75FD4A541B9C35F4007F47BD /* RealTimePushTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75FD4A371B9C35F4007F47BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FD4A4B1B9C35F4007F47BD /* Main.storyboard in Resources */,
+				75FD4A501B9C35F4007F47BD /* LaunchScreen.xib in Resources */,
+				75FD4A4D1B9C35F4007F47BD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75FD4A531B9C35F4007F47BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		092FB139EA7EB1015615A69A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealTimePush/Pods-RealTimePush-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B828BEC72BB09EC1B79E6CC9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75FD4A351B9C35F4007F47BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FD4A421B9C35F4007F47BD /* AppDelegate.m in Sources */,
+				75FD4A451B9C35F4007F47BD /* RealTimePush.xcdatamodeld in Sources */,
+				75FD4A3F1B9C35F4007F47BD /* main.m in Sources */,
+				75FD4A671B9C37CF007F47BD /* HomeViewController.m in Sources */,
+				75FD4A6A1B9C3816007F47BD /* ChatRoomViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75FD4A511B9C35F4007F47BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FD4A5C1B9C35F4007F47BD /* RealTimePushTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75FD4A571B9C35F4007F47BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75FD4A381B9C35F4007F47BD /* RealTimePush */;
+			targetProxy = 75FD4A561B9C35F4007F47BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75FD4A491B9C35F4007F47BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75FD4A4A1B9C35F4007F47BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75FD4A4E1B9C35F4007F47BD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75FD4A4F1B9C35F4007F47BD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75FD4A5D1B9C35F4007F47BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75FD4A5E1B9C35F4007F47BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75FD4A601B9C35F4007F47BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E3D57A9F85ED00B5A0C801 /* Pods-RealTimePush.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RealTimePush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		75FD4A611B9C35F4007F47BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C912F96CE9A1CB46F23529B /* Pods-RealTimePush.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RealTimePush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		75FD4A631B9C35F4007F47BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RealTimePushTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealTimePush.app/RealTimePush";
+			};
+			name = Debug;
+		};
+		75FD4A641B9C35F4007F47BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RealTimePushTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealTimePush.app/RealTimePush";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75FD4A341B9C35F4007F47BD /* Build configuration list for PBXProject "ChatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75FD4A5D1B9C35F4007F47BD /* Debug */,
+				75FD4A5E1B9C35F4007F47BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75FD4A5F1B9C35F4007F47BD /* Build configuration list for PBXNativeTarget "RealTimePush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75FD4A601B9C35F4007F47BD /* Debug */,
+				75FD4A611B9C35F4007F47BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75FD4A621B9C35F4007F47BD /* Build configuration list for PBXNativeTarget "RealTimePushTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75FD4A631B9C35F4007F47BD /* Debug */,
+				75FD4A641B9C35F4007F47BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75FD4A431B9C35F4007F47BD /* RealTimePush.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75FD4A441B9C35F4007F47BD /* RealTimePush.xcdatamodel */,
+			);
+			currentVersion = 75FD4A441B9C35F4007F47BD /* RealTimePush.xcdatamodel */;
+			path = RealTimePush.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 75FD4A311B9C35F4007F47BD /* Project object */;
+}
