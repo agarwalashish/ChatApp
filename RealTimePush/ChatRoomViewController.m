@@ -67,6 +67,11 @@
     }];
     
     [self.pubnubClient subscribeToChannelGroups:@[@"ChatRoomChannel", @"ChatChannels"] withPresence:NO];
+    
+    [self.pubnubClient addPushNotificationsOnChannels:@[@"ChatRoomChannel"] withDevicePushToken:self.appDelegate.deviceToken andCompletion:^(PNAcknowledgmentStatus *status) {
+        NSLog(@"Push notifications added to channel" );
+    }];
+    
     //[self.messagesArray addObject:@"Joined"];
     [self.messagesTable reloadData];
     
@@ -114,15 +119,32 @@
 -(IBAction)sendMessage:(id)sender {
     __block NSString *message = [self.messageTextField text];
     
-    NSDictionary *dict = @{@"from" : self.name, @"message" : message, @"uuid" : self.appDelegate.deviceUUID};
+    NSDictionary *dict = @{@"from" : self.name, @"message" : message, @"uuid" : self.appDelegate.deviceUUID}; // Not a good idea to send UUIDs in production app. Use username/phone number
     
-    [self.pubnubClient publish:dict toChannel:@"ChatRoomChannel" withCompletion:^(PNPublishStatus *status) {
+//    [self.pubnubClient publish:dict toChannel:@"ChatRoomChannel" withCompletion:^(PNPublishStatus *status) {
+//        if (status.error) {
+//            NSLog(@"Could not send message");
+//            return;
+//        }
+//        [self.sentMessagesArray addObject:message];
+//        
+//    }];
+    
+    NSDictionary *push = @{@"apns" :
+                               @{@"aps" : @{
+                                         @"alert" : [NSString stringWithFormat:@"%@: %@", self.name, message]
+                                         }
+                                 }
+                           };
+    
+//    self.pubnubClient 
+
+    [self.pubnubClient publish:dict toChannel:@"ChatRoomChannel" mobilePushPayload:push withCompletion:^(PNPublishStatus *status) {
         if (status.error) {
             NSLog(@"Could not send message");
             return;
         }
         [self.sentMessagesArray addObject:message];
-        
     }];
 }
 

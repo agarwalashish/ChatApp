@@ -20,6 +20,7 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+@property (nonatomic, strong) NSData *deviceToken;
 @property (nonatomic, strong) NSString *deviceUUID;
 
 
