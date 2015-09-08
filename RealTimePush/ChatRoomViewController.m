@@ -80,14 +80,17 @@
     
     NSString *uuid = [dict objectForKey:@"uuid"];
     NSString *messageContent = [dict objectForKey:@"message"];
+    NSString *from = [dict objectForKey:@"from"];
     
+    NSString *displayMessage;
     if (![uuid isEqualToString:self.appDelegate.deviceUUID]) {
-        [self.messagesArray addObject:messageContent];
+        displayMessage = [NSString stringWithFormat:@"%@: %@", from, messageContent];
     }
     else {
-        NSString *msg = [NSString stringWithFormat:@"Me: %@", messageContent];
-        [self.messagesArray addObject:msg];
+        displayMessage = [NSString stringWithFormat:@"Me: %@", messageContent];
     }
+    
+    [self.messagesArray addObject:displayMessage];
     [self.messagesTable reloadData];
 }
 
@@ -101,7 +104,8 @@
 
 -(IBAction)sendMessage:(id)sender {
     __block NSString *message = [self.messageTextField text];
-    NSDictionary *dict = @{@"message" : message, @"uuid" : self.appDelegate.deviceUUID};
+    
+    NSDictionary *dict = @{@"from" : self.name, @"message" : message, @"uuid" : self.appDelegate.deviceUUID};
     
     [self.pubnubClient publish:dict toChannel:@"ChatRoomChannel" withCompletion:^(PNPublishStatus *status) {
         if (status.error) {
