@@ -13,21 +13,10 @@
 		75FD4A4B1B9C35F4007F47BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FD4A491B9C35F4007F47BD /* Main.storyboard */; };
 		75FD4A4D1B9C35F4007F47BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FD4A4C1B9C35F4007F47BD /* Images.xcassets */; };
 		75FD4A501B9C35F4007F47BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FD4A4E1B9C35F4007F47BD /* LaunchScreen.xib */; };
-		75FD4A5C1B9C35F4007F47BD /* RealTimePushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD4A5B1B9C35F4007F47BD /* RealTimePushTests.m */; };
 		75FD4A671B9C37CF007F47BD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD4A661B9C37CF007F47BD /* HomeViewController.m */; };
 		75FD4A6A1B9C3816007F47BD /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD4A691B9C3816007F47BD /* ChatRoomViewController.m */; };
 		85543E6AD22EBC265260BFB8 /* libPods-RealTimePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4B906A58459EC29E7DB189 /* libPods-RealTimePush.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		75FD4A561B9C35F4007F47BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75FD4A311B9C35F4007F47BD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 75FD4A381B9C35F4007F47BD;
-			remoteInfo = RealTimePush;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		75FD4A391B9C35F4007F47BD /* RealTimePush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimePush.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +28,6 @@
 		75FD4A4A1B9C35F4007F47BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75FD4A4C1B9C35F4007F47BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		75FD4A4F1B9C35F4007F47BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		75FD4A551B9C35F4007F47BD /* RealTimePushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimePushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75FD4A5A1B9C35F4007F47BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75FD4A5B1B9C35F4007F47BD /* RealTimePushTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealTimePushTests.m; sourceTree = "<group>"; };
 		75FD4A651B9C37CF007F47BD /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -57,13 +45,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				85543E6AD22EBC265260BFB8 /* libPods-RealTimePush.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75FD4A521B9C35F4007F47BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				75FD4A391B9C35F4007F47BD /* RealTimePush.app */,
-				75FD4A551B9C35F4007F47BD /* RealTimePushTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,24 +153,6 @@
 			productReference = 75FD4A391B9C35F4007F47BD /* RealTimePush.app */;
 			productType = "com.apple.product-type.application";
 		};
-		75FD4A541B9C35F4007F47BD /* RealTimePushTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 75FD4A621B9C35F4007F47BD /* Build configuration list for PBXNativeTarget "RealTimePushTests" */;
-			buildPhases = (
-				75FD4A511B9C35F4007F47BD /* Sources */,
-				75FD4A521B9C35F4007F47BD /* Frameworks */,
-				75FD4A531B9C35F4007F47BD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				75FD4A571B9C35F4007F47BD /* PBXTargetDependency */,
-			);
-			name = RealTimePushTests;
-			productName = RealTimePushTests;
-			productReference = 75FD4A551B9C35F4007F47BD /* RealTimePushTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,10 +164,6 @@
 				TargetAttributes = {
 					75FD4A381B9C35F4007F47BD = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					75FD4A541B9C35F4007F47BD = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 75FD4A381B9C35F4007F47BD;
 					};
 				};
 			};
@@ -223,7 +181,6 @@
 			projectRoot = "";
 			targets = (
 				75FD4A381B9C35F4007F47BD /* RealTimePush */,
-				75FD4A541B9C35F4007F47BD /* RealTimePushTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,13 +193,6 @@
 				75FD4A4B1B9C35F4007F47BD /* Main.storyboard in Resources */,
 				75FD4A501B9C35F4007F47BD /* LaunchScreen.xib in Resources */,
 				75FD4A4D1B9C35F4007F47BD /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75FD4A531B9C35F4007F47BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,23 +244,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75FD4A511B9C35F4007F47BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75FD4A5C1B9C35F4007F47BD /* RealTimePushTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		75FD4A571B9C35F4007F47BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 75FD4A381B9C35F4007F47BD /* RealTimePush */;
-			targetProxy = 75FD4A561B9C35F4007F47BD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		75FD4A491B9C35F4007F47BD /* Main.storyboard */ = {
@@ -349,7 +283,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Ashish Agarwal (AMV5N576G9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ashish Agarwal (AMV5N576G9)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -371,6 +306,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "dce5b293-14ea-4d6f-ab74-9d2ac1c95d94";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -392,7 +328,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ashish Agarwal (K8UD3JJ3Y5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ashish Agarwal (K8UD3JJ3Y5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -407,6 +344,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "ef32fa56-7fad-401b-a20d-a2e0a95dfbef";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -417,9 +355,11 @@
 			baseConfigurationReference = D8E3D57A9F85ED00B5A0C801 /* Pods-RealTimePush.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Ashish Agarwal (AMV5N576G9)";
 				INFOPLIST_FILE = RealTimePush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "dce5b293-14ea-4d6f-ab74-9d2ac1c95d94";
 			};
 			name = Debug;
 		};
@@ -428,43 +368,11 @@
 			baseConfigurationReference = 7C912F96CE9A1CB46F23529B /* Pods-RealTimePush.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ashish Agarwal (K8UD3JJ3Y5)";
 				INFOPLIST_FILE = RealTimePush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		75FD4A631B9C35F4007F47BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RealTimePushTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealTimePush.app/RealTimePush";
-			};
-			name = Debug;
-		};
-		75FD4A641B9C35F4007F47BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RealTimePushTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealTimePush.app/RealTimePush";
+				PROVISIONING_PROFILE = "ef32fa56-7fad-401b-a20d-a2e0a95dfbef";
 			};
 			name = Release;
 		};
@@ -485,15 +393,6 @@
 			buildConfigurations = (
 				75FD4A601B9C35F4007F47BD /* Debug */,
 				75FD4A611B9C35F4007F47BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		75FD4A621B9C35F4007F47BD /* Build configuration list for PBXNativeTarget "RealTimePushTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				75FD4A631B9C35F4007F47BD /* Debug */,
-				75FD4A641B9C35F4007F47BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
