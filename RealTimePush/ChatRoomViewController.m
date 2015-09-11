@@ -12,10 +12,10 @@
 
 @interface ChatRoomViewController () <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, PNObjectEventListener>
 
+@property (nonatomic, strong) AppDelegate *appDelegate;
+
 @property (nonatomic, strong) PubNub *pubnubClient;
 @property (nonatomic, strong) NSMutableArray *messagesArray;
-@property (nonatomic, strong) NSMutableArray *sentMessagesArray;
-@property (nonatomic, strong) AppDelegate *appDelegate;
 
 @property (nonatomic, strong) IBOutlet UIView *sendMessageView;
 @property (nonatomic, strong) IBOutlet UIButton *sendMessageButton;
@@ -40,8 +40,6 @@
     self.appDelegate = [[UIApplication sharedApplication] delegate];
     
     self.messagesArray = [NSMutableArray array];
-    self.sentMessagesArray = [NSMutableArray array];
-    
     
     
     self.messageTextField = [[UITextField alloc] initWithFrame:CGRectMake(5, 5, self.view.frame.size.width - 10 - 50, 30)];
@@ -138,7 +136,6 @@
             NSLog(@"Could not send message");
             return;
         }
-        [self.sentMessagesArray addObject:message];
     }];
 }
 
